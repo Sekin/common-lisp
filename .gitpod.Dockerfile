@@ -3,7 +3,7 @@ FROM gitpod/workspace-full-vnc
 USER gitpod
 
 RUN sudo apt -q update
-RUN sudo apt -q upgrade
+RUN sudo apt -y upgrade
 
 RUN sudo apt install cl-clx-sbcl sbcl sbcl-doc sbcl-source
 RUN curl -o /tmp/ql.lisp http://beta.quicklisp.org/quicklisp.lisp
